@@ -4,7 +4,7 @@ var QualityofLifehacksforDiscord = (_ => {
     return class QualityofLifehacksforDiscord {
         getName() { return "Quality of Life hacks for Discord"; }
         getDescription() { return "Removes some annoyances from discord's context menu"; }
-        getVersion() { return "0.1"; }
+        getVersion() { return "0.1.1"; }
         getAuthor() { return "Superpowers04"; }
         constructor () {
         }
