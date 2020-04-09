@@ -1,10 +1,10 @@
-//META{"name":"QualityofLifehacksforDiscord",,"authorId":"267737465152864256","website":"https://github.com/superpowers04/BD-plugins/","source":"https://github.com/superpowers04/BD-plugins/blob/master/QOL.plugin.js"}*//
+//META{"name":"QualityofLifehacksforDiscord","website":"https://github.com/superpowers04/BD-plugins/","source":"https://raw.githubusercontent.com/superpowers04/BD-plugins/master/QOL.plugin.js"}*//
 
 class QualityofLifehacksforDiscord {
 
     getName() { return "Quality of Life hacks for Discord"; }
     getDescription() { return "Removes some annoyances from discord's context menu"; }
-    getVersion() { return "0.1"; }
+    getVersion() { return "0.2"; }
     getAuthor() { return "Superpowers04"; }
     getChanges() {
         return {
