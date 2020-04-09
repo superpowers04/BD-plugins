@@ -1,4 +1,4 @@
-//META{"name":"QualityofLifehacksforDiscord","website":"https://github.com/superpowers04/BD-plugins/","source":"https://github.com/superpowers04/BD-plugins/blob/master/QOL.plugin.js"}*//
+//META{"name":"QualityofLifehacksforDiscord",,"authorId":"267737465152864256","website":"https://github.com/superpowers04/BD-plugins/","source":"https://github.com/superpowers04/BD-plugins/blob/master/QOL.plugin.js"}*//
 
 class QualityofLifehacksforDiscord {
 
