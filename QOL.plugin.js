@@ -28,16 +28,10 @@ var QualityofLifehacksforDiscord = (_ => {
                 }
                     
                 };
-            }
-            var contexserc = "div.da-disabled"
-            var contexarry = $( contexserc )
-            var contexarryLength = contexarry.Length
-            for (var i = 0; i < contexarry.Length; i++) {
-                $( contexserc )[i].outerHTML = "";
-            }        
+            }     
             var contexserc = "div.itemSubMenu-1vN_Yn" //da-itemSubMenu
             var contexarry = $( contexserc )
-            var contexarryLength = $( "div.da-itemSubMenu" ).Length
+            //var contexarryLength = $( "div.da-itemSubMenu" ).Length
 
             if ($( contexserc )[0].outerText == "Invite to Server") {
                 $( contexserc )[0].outerHTML = "";
