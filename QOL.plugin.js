@@ -4,7 +4,7 @@ var QualityofLifehacksforDiscord = (_ => {
     return class QualityofLifehacksforDiscord {
         getName() { return "Quality of Life hacks for Discord"; }
         getDescription() { return "Removes some annoyances from discord's context menu"; }
-        getVersion() { return "0.3"; }
+        getVersion() { return "0.4"; }
         getAuthor() { return "Superpowers04"; }
         constructor () {
         }
@@ -14,34 +14,34 @@ var QualityofLifehacksforDiscord = (_ => {
             document.addEventListener("contextmenu", this.contextEvent = e => this.onContextMenu(e));
         }
         onContextMenu(e) {
-            var contexserc = "div.item-1Yvehc" //div.da-item
-            var contexarry = $( contexserc )
-            var contexarryLength = contexarry.Length
-            for (var i = 0; i < 4; i++) {
-                
-                if (contexarry[i].innerText == "Call") {
-                    $( contexserc )[i].outerHTML = "";  
-                };
-                if (contexarry[i].innerText == "Profile") {
-                    if (contexarry[1].innerText == "Mark As Read") {
-                        $( contexserc )[i].outerHTML = "";
-                }
-                    
-                };
-            }     
-            var contexserc = "div.itemSubMenu-1vN_Yn" //da-itemSubMenu
-            var contexarry = $( contexserc )
-            //var contexarryLength = $( "div.da-itemSubMenu" ).Length
+             //da-itemSubMenu
+            var contexitem = "div.item-1Yvehc" //div.da-item
+            // var contexitemarry = $( contexitem )
+            
+            var contexsubm = "div.itemSubMenu-1vN_Yn"
+            var contexsubmarry = $( contexsubm )
+            // var contexitemarryLength = contexitemarry.Length
+            // var contexsubmarryLength = $( contexsubm ).Length
 
-            if ($( contexserc )[0].outerText == "Invite to Server") {
-                $( contexserc )[0].outerHTML = "";
+            //Remove Call button
+            for (var i = 0; i < $(contexitem).length; i++) {
+                if ( $( contexitem )[i]) {
+                    if ($( contexitem )[i].innerText == "Call") {
+                        $( contexitem )[i].outerHTML = "";  
+                        i--
+                    };
+                };
+                // if (contexitemarry[i].innerText == "Profile") {
+                //     if ($("disabled-2xniQf")[0].innerText == "Mark As Read") {
+                //         $("disabled-2xniQf")[i].outerHTML = "";
+                //     }
+                // };
+            }   
+            //Remove Invite to Server dropdown
+            if ($( contexsubm )[0].outerText == "Invite to Server") {
+                $( contexsubm )[0].outerHTML = "";
                     
             };
-            // if ($( contexserc )[1].outerText == "Invite to Server") {
-            //     $( contexserc )[1].outerHTML = "";
-                    
-            // };
-                // if (contexarry[i].innerHTML()) return;
         }
 
         stop() {
