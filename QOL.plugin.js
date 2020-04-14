@@ -31,11 +31,6 @@ var QualityofLifehacksforDiscord = (_ => {
                         i--
                     };
                 };
-                // if (contexitemarry[i].innerText == "Profile") {
-                //     if ($("disabled-2xniQf")[0].innerText == "Mark As Read") {
-                //         $("disabled-2xniQf")[i].outerHTML = "";
-                //     }
-                // };
             }   
             //Remove Invite to Server dropdown
             if ($( contexsubm )[0].outerText == "Invite to Server") {
