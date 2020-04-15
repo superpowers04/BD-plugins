@@ -1,0 +1,64 @@
+//META{"name":"Reactive Icons","description":"Requires Normaized classes to work, Makes some icons react to you hovering over them, and colors the deafen/mute icons","author":"Superpowers04","version":"0.1","website":"https://github.com/Superpowers04","source":"https://github.com/superpowers04/BD-plugins/blob/master/reactiveicons.theme.css"}*//{}
+
+
+
+
+/*Animations*/
+
+@keyframes rotate{
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+/*@keyframes pulse{
+    0% {transform: scale(1.0);}
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1.0);}
+}
+*/
+
+
+/*Colors*/
+.da-button[aria-checked="true"]{
+    color: #D11703;
+}
+
+.da-button[aria-checked="false"]{
+    color: #219D86;
+}
+
+/*Rotating User Settings*/
+.da-button[aria-label="User Settings"]:hover{
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/*Size changing icons*/
+
+.imageWrapper-2p5ogY:hover,.da-icon:hover,.da-attachButton:hover,.da-item:hover,.ui-tab-bar-item:hover, .da-wrapper[role="button"]:hover{
+    transform:scale(1.1);
+}
+
+.channel-2QD9_O:hover{
+transition: transform 0.2s;
+transform:skew(0.1deg);
+
+}
+
+.channel-2QD9_O{
+ transition: transform 0.2s;
+ transform:skew(-13deg);   
+}
+
+,.avatar-1BDn8e.clickable-1bVtEA:hover,.emojiItem-109bjA.selected-39BZ4S, .attachButton-1UjEWA:hover, .emojiButton-3uL3Aw:hover, .emoji:hover, .blobContainer-239gwq:hover, .avatar-17mtNa:hover, .mask-3OgeRz:hover, .popout-2fzvxG:hover, .profile-ZOdGIb:hover{
+transition: transform 0.6s;
+transform:scale(1.5);
+}
+
+.avatar-1BDn8e.clickable-1bVtEA,.attachButton-1UjEWA, .emojiButton-3uL3Aw, .emoji, .imageWrapper-2p5ogY, .blobContainer-239gwq, .emoji, .wrapper-2F3Zv8, .blobContainer-239gwq, .avatar-17mtNa, .mask-3OgeRz, .profile-ZOdGIb,.popout-2fzvxG{
+transition: transform 0.7s;
+
+}
+
