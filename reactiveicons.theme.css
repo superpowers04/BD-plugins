@@ -1,4 +1,4 @@
-//META{"name":"Reactive Icons","description":"Requires Normaized classes to work, Makes some icons react to you hovering over them, and colors the deafen/mute icons","author":"Superpowers04","version":"0.1","website":"https://github.com/Superpowers04","source":"https://github.com/superpowers04/BD-plugins/blob/master/reactiveicons.theme.css"}*//{}
+//META{"name":"Reactive Icons","description":"Makes some icons react to you hovering over them, and colors the deafen/mute icons","author":"Superpowers04","version":"0.1","website":"https://github.com/Superpowers04","source":"https://github.com/superpowers04/BD-plugins/blob/master/reactiveicons.theme.css"}*//{}
 
 
 
@@ -48,7 +48,7 @@
 
 /*Size changing icons*/
 
-.imageWrapper-2p5ogY:hover,.button-14-BFJ:hover > .contents-18-Yxp,.da-emojiItem:hover,.emoji:hover,.da-attachButton:hover,.da-item:hover,.ui-tab-bar-item:hover, .da-wrapper[role="button"]:hover{
+.imageWrapper-2p5ogY:hover,.button-14-BFJ:hover > .contents-18-Yxp,.emojiItem-14v6tW:hover,.emoji:hover,.attachButton-2WznTc:hover,.item-PXvHYJ:hover,.ui-tab-bar-item:hover, .da-wrapper[role="button"]:hover{
     transform:scale(1.1);
 }
 
