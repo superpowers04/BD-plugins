@@ -5,52 +5,50 @@
 
 /*Animations*/
 
-@keyframes rotate{
-    0% {transform: rotate(0deg);}
-    50% {transform: rotate(180deg);}
-    100% {transform: rotate(360deg);}
-}
 @keyframes rotatedone{
     100% {transform: rotate(0deg);}
 }
-/*@keyframes pulse{
-    0% {transform: scale(1.0);}
-    50% {transform: scale(1.05);}
-    100% {transform: scale(1.0);}
-}
-*/
 
 /*Remove call and invite to server*/
+
+.avatarWrapperNormal-3wFMbf .avatarWrapper-3H_478{
+    height: 150px;
+    width: 150px;
+}
 #user-context-call{
     height: 0;
 }
-
+button[aria-label="Send a gift"] {
+    display: none;
+}
 
 /*Colors*/
-.button-14-BFJ[aria-checked="true"]{
+button[aria-checked="true"]{
     color: #D11703;
 }
 
-.button-14-BFJ[aria-checked="false"]{
+button[aria-checked="false"]{
     color: #219D86;
 }
-
 /*Rotating User Settings*/
 .button-14-BFJ[aria-label="User Settings"]:hover > .contents-18-Yxp{
-    animation-name: rotate;
+    animation-name: settingsrotate;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+/*Animation*/
+@keyframes settingsrotate{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
 .button-14-BFJ[aria-label="User Settings"] > .contents-18-Yxp{
-    transition: 1s linear all;
+    transition: 1s;
 }
 
 /*Size changing icons*/
 
-.imageWrapper-2p5ogY:hover,.button-14-BFJ:hover > .contents-18-Yxp,.emojiItem-14v6tW:hover,.emoji:hover,.attachButton-2WznTc:hover,.item-PXvHYJ:hover,.ui-tab-bar-item:hover, .da-wrapper[role="button"]:hover{
-    transform:scale(1.1);
-}
+
 
 .channel-2QD9_O:hover{
 transition: transform 0.2s;
@@ -63,25 +61,136 @@ transform:skew(0.1deg);
  transform:skew(-13deg);   
 }
 
+/*  Fade in messages */
 
-
-
-
-
-
-.avatar-1BDn8e:hover,.clickable-1bVtEA:hover, .blobContainer-239gwq:hover, .avatar-17mtNa:hover, .mask-3OgeRz:hover, .popout-2fzvxG:hover, .profile-ZOdGIb:hover{
-transition: transform 0.6s;
-transform:scale(1.5);
+@keyframes messageappear {
+      0% {
+        opacity: 0%;
+    }
+      100% {
+        opacity: 100%;
+    }
 }
 
-.avatar-1BDn8e,.clickable-1bVtEA,.attachButton-1UjEWA, .emojiButton-3uL3Aw, .emoji, .imageWrapper-2p5ogY, .blobContainer-239gwq, .emoji, .wrapper-2F3Zv8, .blobContainer-239gwq, .avatar-17mtNa, .mask-3OgeRz, .profile-ZOdGIb,.popout-2fzvxG{
-transition: transform 0.7s;
+.message-2qnXI6, .da-message, .cozyMessage-3V1Y8y, .da-cozyMessage, .groupStart-23k01U, .da-groupStart, .wrapper-2a6GCs, .da-wrapper, .cozy-3raOZG, .da-cozy, .zalgo-jN1Ica, .da-zalgo
+,.members-1998pB,.da-members,.thin-1ybCId,.fade-2kXiP2{
+    animation-name: messageappear;
+    animation-duration: 0.3s;
+
 }
-.da-userInfoViewing{
+*:click{    transform:scale(1.1);
+}
+
+button:hover,.closeButton-1tv5uR:hover, .da-closeButton:hover,.imageWrapper-2p5ogY:hover,.button-14-BFJ:hover > .contents-18-Yxp,.emojiItem-14v6tW:hover,.emoji:hover,.attachButton-2WznTc:hover,.item-PXvHYJ:hover,.ui-tab-bar-item:hover, .da-wrapper[role="button"]:hover{
+    transform:scale(1.1);
+}
+.avatar-1BDn8e:hover, .blobContainer-239gwq:hover, .avatar-17mtNa:hover, .mask-3OgeRz:hover, .popout-2fzvxG:hover, .profile-ZOdGIb:hover{
+    /*transition: transform 0.6s cubic-bezier(0, 0, 0, 1);*/
+    transform:scale(1.25);
+}
+
+.da-userInfoViewing, .userSettingsSecurity-3IYeMF, .da-userSettingsSecurity,.da-billingInformation,.billingInformation-1MZXzx,.detailsBlock-FoDTGA,.da-detailsBlock,.contentRegion-3nDuYy,.da-contentRegion{
     transition: 30ms cubic-bezier(.2, .11, 0, 1) !important;
-    filter: blur(4px) !important;
+    filter: blur(7px) !important;
 }
-.da-userInfoViewing:hover{
+.da-userInfoViewing:hover, .userSettingsSecurity-3IYeMF:hover, .da-userSettingsSecurity:hover,.billingInformation-1MZXzx:hover,.da-billingInformation:hover,.detailsBlock-FoDTGA:hover,.da-detailsBlock:hover{
     transition: 30ms cubic-bezier(.2, .11, 0, 1) !important;
     filter: blur(0px) !important;
+}
+
+/* Delete the below to stop blurring of right settings panel*/
+.contentRegion-3nDuYy:hover,.da-contentRegion:hover{
+    transition: 30ms cubic-bezier(.2, .11, 0, 1) !important;
+    filter: blur(0px) !important;
+}
+.contentRegion-3nDuYy,.da-contentRegion{
+    transition: 30ms cubic-bezier(.2, .11, 0, 1) !important;
+    filter: blur(7px) !important;
+}
+
+/*Colored URL's*/
+
+a[href^="https://"] {
+    color: #009900;
+}
+a[href^="http://"] {
+    color: #da0000;
+}
+a[href^="https://discord.com"],a[href^="https://discordapp.com"],a[href^="https://cdn.discord.com"],a[href^="https://cdn.discordapp.com"] {
+   color: #738BD7;
+}
+a[href*="minecraft.net"],a[href*="minecrafthopper.net"]{
+   color: #008542;
+}
+a[href*="nvidia.com"]{
+   color: #73B601;
+}
+a[href*="archlinux.org"]{
+   color: #1793D1;
+}
+a[href*="intel.com"]{
+   color: #0071C5;
+}
+a[href*="minecraft.gamepedia.com"]{
+    color: #6c4d34;
+}
+a[href*='imgur.com']{
+color: #87C90F;
+}
+a[href*="youtube.com"],a[href*="youtu.be"]{
+    color: #FF0000;
+}
+a[href*="mojang.com"]{
+   color: #F0454F;
+}
+a[href*="amd.com"]{
+   color: #880000;
+}
+a[href*="super04.mooo.com"]{
+    color: #5B0088;
+}
+a[href*="wikipedia.org"]{
+    color: #eee;
+}
+a[href*="xbox.com"]{
+    color: #81BC06;
+}
+a[href*="curseforge.com"]{
+    color: #F16436;
+}
+a[href*="apple.com"]{
+    color: #D7D7D7;
+}
+a[href*="ubuntu.com"]{
+    color: #E25427;
+}
+a[href*="twitter.com"]{
+    color:#1DA1F2;
+}
+a[href^="https://duck.co"],a[href^="https://duckduckgo.co"]{
+   color: #E16F4F;
+}
+a[href^="https://google."],a[href^="https://www.google."]{
+   -webkit-text-fill-color:transparent;
+   background-image: linear-gradient(90deg,#4285F4,#EA4335,#FBBC05,#4285F4,#34A853,#EA4335);
+   -webkit-background-clip: text;
+}
+a[href*="steampowered.com"],a[href*="steamcommunity.com"]{
+   -webkit-text-fill-color:transparent;
+   background-image: linear-gradient(#2e4a5a,#1B2838);
+   -webkit-background-clip: text;
+}
+a[href*="gamebanana.com"]{
+   -webkit-text-fill-color:transparent;
+   background-image: linear-gradient(#F3E463,#A7963C);
+   -webkit-background-clip: text;
+}
+a[href*="microsoft.com"]{
+   -webkit-text-fill-color:transparent;
+   background-image: linear-gradient(90deg,#F35325,#81BC06,#05A6F0,#FFBA08);
+   -webkit-background-clip: text;
+}
+
+a[href*="steampowered.com"]:hover,a[href*="gamebanana.com"]:hover,a[href*="steamcommunity.com"]:hover,a[href^="https://google."]:hover,a[href^="https://www.google."]:hover,a[href*="microsoft.com"]:hover{
+    -webkit-text-fill-color: rgba(255,255,255,0.6);
 }
