@@ -1,13 +1,24 @@
-//META{"name":"Reactive Icons","description":"Makes some icons react to you hovering over them, and colors the deafen/mute icons","author":"Superpowers04","version":"0.1","website":"https://github.com/Superpowers04","source":"https://github.com/superpowers04/BD-plugins/blob/master/reactiveicons.theme.css"}*//{}
+//META{"name":"Reactive Icons","description":"Requires Normaized classes to work, Makes some icons react to you hovering over them, and colors the deafen/mute icons","author":"Superpowers04","version":"0.1","website":"https://github.com/Superpowers04","source":"https://github.com/superpowers04/BD-plugins/blob/master/reactiveicons.theme.css"}*//{}
 
 
 
 
 /*Animations*/
 
+/*@keyframes rotate{
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}*/
 @keyframes rotatedone{
     100% {transform: rotate(0deg);}
 }
+/*@keyframes pulse{
+    0% {transform: scale(1.0);}
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1.0);}
+}
+*/
 
 /*Remove call and invite to server*/
 
@@ -61,7 +72,7 @@ transform:skew(0.1deg);
  transform:skew(-13deg);   
 }
 
-/*  Fade in messages */
+
 
 @keyframes messageappear {
       0% {
@@ -89,6 +100,9 @@ button:hover,.closeButton-1tv5uR:hover, .da-closeButton:hover,.imageWrapper-2p5o
     transform:scale(1.25);
 }
 
+/*button,.avatar-1BDn8e,.attachButton-1UjEWA, .emojiButton-3uL3Aw, .emoji,  .emoji, .blobContainer-239gwq, .avatar-17mtNa, .mask-3OgeRz, .profile-ZOdGIb,.popout-2fzvxG{
+transition: transform 0.6s cubic-bezier(0, 0, 0, 1);
+}*/
 .da-userInfoViewing, .userSettingsSecurity-3IYeMF, .da-userSettingsSecurity,.da-billingInformation,.billingInformation-1MZXzx,.detailsBlock-FoDTGA,.da-detailsBlock,.contentRegion-3nDuYy,.da-contentRegion{
     transition: 30ms cubic-bezier(.2, .11, 0, 1) !important;
     filter: blur(7px) !important;
@@ -108,15 +122,13 @@ button:hover,.closeButton-1tv5uR:hover, .da-closeButton:hover,.imageWrapper-2p5o
     filter: blur(7px) !important;
 }
 
-/*Colored URL's*/
-
 a[href^="https://"] {
     color: #009900;
 }
 a[href^="http://"] {
     color: #da0000;
 }
-a[href^="https://discord.com"],a[href^="https://discordapp.com"],a[href^="https://cdn.discord.com"],a[href^="https://cdn.discordapp.com"] {
+a[href*="//discord.com"],a[href*="//discordapp.com"],a[href*=".discord.com/"],a[href^="dis.gd/"],a[href*="discord.gg/"] {
    color: #738BD7;
 }
 a[href*="minecraft.net"],a[href*="minecrafthopper.net"]{
